@@ -55,27 +55,27 @@ const ExperienceSection = () => {
   const experiences = [
     {
       icon: Network,
-      title: "WordPress Developer",
-      company: "Fiverr",
-      period: "2019 - 2020",
+      title: "Software Developer",
+      company: "WNS Global Services",
+      period: "Sep 2021 - Apr 2022",
       description:
-        "Worked on developing and customizing WordPress websites for clients globally.",
-    },
-    {
-      icon: Layers,
-      title: "Junior Frontend Developer",
-      company: "Sera Programmer",
-      period: "2021 - 2023",
-      description:
-        "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
+        "Developed an internal dashboard using Spring Boot and Thymeleaf to enhance data visualization. Optimized database queries using Hibernate to improve retrieval performance. Refactored legacy code, reducing response times by 20% through performance improvements.",
     },
     {
       icon: Code2,
-      title: "JavaScript Developer",
-      company: "OlovJS (Sera Programmer)",
-      period: "2023 - Present",
+      title: "Software Intern",
+      company: "Algo University",
+      period: "May 2024 - Sep 2024",
       description:
-        "Contributed to developing JavaScript libraries and enhancing framework functionalities.",
+        "Created a dynamic Outlook add-in to auto-categorize emails in real-time, improving time management. Automated Change Request assignments, reducing manual intervention by 99% and enhancing efficiency.",
+    },
+    {
+      icon: Layers,
+      title: "Freelance Software Developer",
+      company: "Self-Employed",
+      period: "Oct 2022 - Apr 2024",
+      description:
+        "Built a 3-tier Billing and Inventory Management System with Python (Flask), PostgreSQL, and web frontend for managing users, products, and transactions. Developed an E-Commerce API System using Python (FastAPI) and HTTP/2, reducing latency by 30%. Designed a CRM System with optimized PostgreSQL queries for faster data retrieval. Created a Trends Visualization Dashboard with Flask, React.js, Elasticsearch, and Redis, cutting API response times by 40%.",
     },
   ];
 

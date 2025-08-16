@@ -5,44 +5,33 @@ import PropTypes from "prop-types";
 
 const projects = [
   {
-    title: "Olova! A Lightweight JavaScript Library",
+    title: "Battery Management System",
     description:
-      "A lightweight JavaScript library for creating beautiful, responsive UI components.",
-    src: "rock.jpg",
-    link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
+      "Built an Battery management system using Python (Django) and PostgreSQL for voltage tracking and power management, and developed RESTful APIs for handling orders, inventory, and payments. Optimized PostgreSQL queries and integrated role-based access control for efficient user management.",
+    src: "min-order.png",
+    link: "https://i.postimg.cc/ry7X5hN2/min-order.png",
     color: "#5196fd",
-    githubLink: "https://github.com/olovajs/olova",
-    liveLink: "https://olova.js.org/",
+    githubLink: "https://github.com/Adity7/lithinaenergy11",
+    liveLink: "https://lithinaenergy.com/",
   },
   {
-    title: "A sleek portfolio built with React and Tailwind CSS ",
+    title: "Passive Mental Health Detection",
     description:
-      "A sleek portfolio built with React and Tailwind CSS to showcase your skills, projects, and experience in a modern design.",
-    src: "tree.jpg",
-    link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
+      "Built a sentiment analysis system using Flask APIs and pretrained models to assess mental health in real-time. Integrated Random Forest and Electra models for accurate audio and textual sentiment analysis. Built a doctor’s dashboard using the MERN stack to visualize patient emotional trends and triggering words.",
+    src: "mentalhealth.jpg",
+    link: "https://i.postimg.cc/1zR5bWdY/logo.png",
     color: "#8f89ff",
-    githubLink: "https://github.com/seraprogrammer/portfolio",
-    liveLink: "https://codervai.vercel.app",
+    githubLink: "https://github.com/Adity7/passive-mental-health-detection",
   },
   {
-    title: "🚀 CodeWhisperer",
+    title: "Sync.It",
     description:
-      "🚀 CodeWhisperer A powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
-    src: "water.jpg",
-    link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
+      "VIRAT is a website that serves as a socializing platform, providing features such as chat, group creation, and synced streaming with a user-friendly interface. It allows users to communicate with friends, learn new things, develop interests, and be entertained. The platform enables users to create groups, chat with friends, and watch local videos in sync by creating rooms with admin access.",
+    src: "virat.png",
+    link: "https://i.postimg.cc/7YX3pRsp/virat.png",
     color: "#fff",
-    githubLink: "https://github.com/seraprogrammer/codewhisperer",
-    liveLink: "https://codewhisperer.vercel.app/",
-  },
-  {
-    title: "CodeKori 🔥",
-    description:
-      "CodeKori is a powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI. Start coding instantly! 💻✨",
-    src: "house.jpg",
-    link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
-    color: "#ed649e",
-    githubLink: "https://github.com/seraprogrammer/CodeKori",
-    liveLink: "https://codekori.js.org",
+    githubLink: "https://github.com/Adity7/Sync.It",
+    liveLink: "https://virat-4cfd.onrender.com/",
   },
 ];
 
@@ -240,36 +229,38 @@ function Card({
                 </motion.a>
 
                 {/* Live Link */}
-                <motion.a
-                  href={liveLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group flex items-center gap-2"
-                  whileHover={{ y: -3 }}
-                  transition={{ type: "spring", stiffness: 400 }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="22"
-                    height="22"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke={color}
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                {liveLink && (
+                  <motion.a
+                    href={liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="group flex items-center gap-2"
+                    whileHover={{ y: -3 }}
+                    transition={{ type: "spring", stiffness: 400 }}
                   >
-                    <circle cx="12" cy="12" r="10"></circle>
-                    <line x1="2" y1="12" x2="22" y2="12"></line>
-                    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-                  </svg>
-                  <span
-                    className="text-xs md:text-sm font-medium"
-                    style={{ color }}
-                  >
-                    Live
-                  </span>
-                </motion.a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="22"
+                      height="22"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke={color}
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="2" y1="12" x2="22" y2="12"></line>
+                      <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                    </svg>
+                    <span
+                      className="text-xs md:text-sm font-medium"
+                      style={{ color }}
+                    >
+                      Live
+                    </span>
+                  </motion.a>
+                )}
               </div>
             </div>
           </div>
@@ -290,5 +281,5 @@ Card.propTypes = {
   range: PropTypes.array.isRequired,
   targetScale: PropTypes.number.isRequired,
   githubLink: PropTypes.string.isRequired,
-  liveLink: PropTypes.string.isRequired,
+  liveLink: PropTypes.string,
 };
