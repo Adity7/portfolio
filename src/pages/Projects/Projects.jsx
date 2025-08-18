@@ -15,6 +15,16 @@ const projects = [
     liveLink: "https://lithinaenergy.com/",
   },
   {
+    title: "LargeChatRAG",
+    description:
+      "LeadRAG is a secure and intelligent Retrieval-Augmented Generation (RAG) system that enhances information retrieval through leader embeddings and a keyword-driven corpus. It combines semantic and lexical techniques to provide high-quality, context-aware answers. Role-based access and admin capabilities ensure a controlled and customizable environment.",
+    src: "min-order.png",
+    link: "https://i.postimg.cc/Vkmq979J/Screenshot-2025-08-18-223352.png",
+    color: "#5196fd",
+    githubLink: "https://github.com/Adity7/LargeChatRAG",
+    liveLink: "https://largechat-61je.onrender.com/login",
+  },
+  {
     title: "Passive Mental Health Detection",
     description:
       "Built a sentiment analysis system using Flask APIs and pretrained models to assess mental health in real-time. Integrated Random Forest and Electra models for accurate audio and textual sentiment analysis. Built a doctor’s dashboard using the MERN stack to visualize patient emotional trends and triggering words.",
