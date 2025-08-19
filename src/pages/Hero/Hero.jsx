@@ -53,15 +53,15 @@ const profile = {
     name: 'Aditya Vyas',
     title: 'Software Developer | Full-Stack Engineer | Freelancer',
     skills: [
-        'Python', 'Flask', 'Django', 'FastAPI', 'React',
+        'Python', 'Flask', 'Django',
         'Node.js', 'PostgreSQL', 'MySQL', 'MongoDB', 'SQL',
         'Docker', 'Git', 'REST APIs', 'HTTP/2', 'JavaScript',
-        'C++', 'Spring Boot', 'Hibernate', 'Elasticsearch', 'Redis'
+        'C++', 'Redis'
     ],
     hardWorker: true,
     quickLearner: true,
     problemSolver: true,
-    yearsOfExperience: 3, 
+    yearsOfExperience: 1, 
     hireable: function() {
         return (
             this.hardWorker &&
