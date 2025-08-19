@@ -67,7 +67,7 @@ const profile = {
             this.hardWorker &&
             this.problemSolver &&
             this.skills.length >= 10 &&
-            this.yearsOfExperience >= 3
+            this.yearsOfExperience >= 1
         );
     }
 };
